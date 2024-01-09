@@ -7107,11 +7107,12 @@ a.dark-logo {
 <!--Start Breadcumb Area-->
 <!-- ========================================-->*/
 .breadcumb-area {
-  background: url(../images/inner/breadcumb.jpg);
+  background: url("../images/home-1/hero-bg.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center center;
-  padding: 260px 0 170px;
+  /* padding: 260px 0 170px; */
+  height: 70vh;
   text-align: center;
 }
 
