@@ -1,0 +1,18 @@
+HTTrack3.49-2+htsswf+htsjava launched on Tue, 19 Dec 2023 10:59:52 at https://html.ditsolution.net/royella/index.html +*.png +*.gif +*.jpg +*.jpeg +*.css +*.js -ad.doubleclick.net/* -mime:application/foobar
+(winhttrack -qwC2%Ps2u1%s%uN0%I0p3DaK0H0%kf2A25000%f#f -F "Mozilla/4.5 (compatible; HTTrack 3.0x; Windows 98)" -%F "<!-- Mirrored from %s%s by HTTrack Website Copier/3.x [XR&CO'2014], %s -->" -%l "en, *" https://html.ditsolution.net/royella/index.html -O1 "C:\Users\Arya\Desktop\crown" +*.png +*.gif +*.jpg +*.jpeg +*.css +*.js -ad.doubleclick.net/* -mime:application/foobar )
+
+Information, Warnings and Errors reported for this mirror:
+note:	the hts-log.txt file, and hts-cache folder, may contain sensitive information,
+	such as username/password authentication for websites mirrored in this project
+	do not share these files/folders if you want these information to remain private
+
+11:01:08	Error: 	"Not Found" (404) at link https://html.ditsolution.net/royella/room-details (from https://html.ditsolution.net/royella/index.html)
+11:01:08	Error: 	"Not Found" (404) at link https://html.ditsolution.net/royella/blog-details (from https://html.ditsolution.net/royella/index.html)
+11:01:08	Error: 	"Not Found" (404) at link https://html.ditsolution.net/royella/assets/css/owl.video.play.png (from https://html.ditsolution.net/royella/assets/css/owl.carousel.min.css)
+11:01:09	Error: 	"Not Found" (404) at link https://html.ditsolution.net/royella/assets/fonts/Flaticond41d.eot? (from https://html.ditsolution.net/royella/assets/css/flaticon.css)
+11:01:30	Error: 	"Not Found" (404) at link https://html.ditsolution.net/royella/find-room.row (from https://html.ditsolution.net/royella/index-5.html)
+11:01:30	Error: 	"Not Found" (404) at link https://html.ditsolution.net/royella/index (from https://html.ditsolution.net/royella/index-6.html)
+11:01:30	Error: 	"Not Found" (404) at link https://html.ditsolution.net/royella/blog (from https://html.ditsolution.net/royella/blog.html)
+
+HTTrack Website Copier/3.49-2 mirror complete in 1 minutes 38 seconds : 330 links scanned, 322 files written (15784633 bytes overall) [12302766 bytes received at 125538 bytes/sec], 5269795 bytes transferred using HTTP compression in 82 files, ratio 30%, 47.1 requests per connection
+(7 errors, 0 warnings, 0 messages)
