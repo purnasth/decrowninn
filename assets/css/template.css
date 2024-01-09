@@ -1,0 +1,20 @@
+.room-bottom {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.room-bottom span {
+  font-size: 14px;
+  font-weight: 400;
+  color: #616161;
+  font-family: "Lora";
+}
+
+.room-bottom .coustomar-rating img {
+  width: 18px;
+  height: 18px;
+  margin-right: 10px;
+  filter: brightness(0) saturate(100%) invert(38%) sepia(0%) saturate(4766%)
+    hue-rotate(87deg) brightness(95%) contrast(94%);
+}
