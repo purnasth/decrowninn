@@ -59,3 +59,17 @@ footer {
   background-color: rgba(0, 0, 0, 0.65);
   z-index: 1;
 }
+
+
+.book-now a{
+  width: 200px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  text-transform: uppercase;
+}
+
+.facilities-area .luxury-button:before {
+  display: none;
+}
