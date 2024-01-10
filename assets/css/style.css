@@ -1729,6 +1729,12 @@ a.facilities-button i:hover {
   margin-top: -179px;
 }
 
+@media (max-width: 767px) {
+  .footer-widget-contact {
+    margin-top: 50px;
+  }
+}
+
 .footer-widget-contact-info ul li,
 .footer-widget-contact-info a {
   font-size: 15px;

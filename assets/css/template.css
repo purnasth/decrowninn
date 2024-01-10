@@ -85,3 +85,14 @@ footer {
   height: 300px;
   object-fit: cover;
 }
+
+.gallery.room-title-area {
+  /* background-color: var(--white-color); */
+  padding: 0;
+  padding-top: 50px;
+}
+
+
+.gallery {
+  background: var(--grey-color);
+}
