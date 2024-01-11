@@ -40,8 +40,6 @@ footer {
 .footer-widget-contact {
   background: var(--primary-color);
   position: relative;
-  background: url(../images/buliding.jpg) no-repeat center center;
-  background-size: cover;
 }
 
 .footer-widget-contact .overlay-wrapper {
@@ -56,8 +54,10 @@ footer {
   left: 0;
   width: 100%;
   height: 100%;
-  background-color: rgba(0, 0, 0, 0.65);
   z-index: 1;
+  background: url(../images/building.jpeg) no-repeat center center;
+  background-size: cover;
+  opacity: 0.1;
 }
 
 .book-now a {
