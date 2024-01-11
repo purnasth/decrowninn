@@ -1,8 +1,20 @@
+:root {
+  --primary-color: #0e175c;
+  --primary-gray: #444;
+  --gold-color: #b28331;
+  --gold-text-color: #c19d68;
+  --grey-color: #f8f1ed;
+  --white-color: #ffffff;
+  --title-fonts: "Cormorant Garamond", sans-serif;
+  --body-fonts: "Lora";
+}
+
 a.meanmenu-reveal {
   display: none;
 }
 .mean-container .mean-bar {
-  background: #c19e68;
+  /* background: #c19e68; */
+  background: var(--primary-color);
   float: left;
   min-height: 60px;
   padding: 4px 0 0;
@@ -196,5 +208,4 @@ a.meanmenu-reveal {
 
 .meanmenu-reveal {
   margin-top: 15px;
-
 }
