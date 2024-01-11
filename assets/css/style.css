@@ -7539,7 +7539,7 @@ a.dark-logo {
 <!-- ========================================-->*/
 
 .inner.room-area {
-  background-color: #f8f6f3;
+  /* background-color: #f8f6f3; */
   padding: 121px 0 94px;
   margin-top: 0;
 }
@@ -7797,7 +7797,7 @@ a.dark-logo {
 }
 
 .style-two .single-contact-form {
-  background-color: #272727;
+  background-color: var(--primary-gray);
   padding: 42px 53px 60px;
   text-align: center;
 }
