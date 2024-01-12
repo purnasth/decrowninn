@@ -129,3 +129,121 @@ footer {
   filter: brightness(0) saturate(100%) invert(49%) sepia(53%) saturate(528%)
     hue-rotate(359deg) brightness(98%) contrast(91%);
 }
+
+/* gallery */
+.portfolio {
+  padding: 10rem 0;
+  padding-top: 14rem;
+  background: var(--grey-color);
+}
+
+.portfolio img {
+  width: 100%;
+  height: 250px;
+  object-fit: cover;
+}
+.mtb-40 {
+  margin: 40px 0;
+}
+
+.v-middle {
+  position: absolute;
+  width: 100%;
+  top: 50%;
+  left: 0;
+  -webkit-transform: translate(0%, -50%);
+  -moz-transform: translate(0%, -50%);
+  -ms-transform: translate(0%, -50%);
+  -o-transform: translate(0%, -50%);
+  transform: translate(0%, -50%);
+}
+
+.portfolio {
+  overflow: hidden;
+}
+.portfolio .filtering span {
+  position: relative;
+  z-index: 2;
+  background: var(--white-color);
+  border: transparent;
+  border-radius: 0;
+  margin-right: 13px;
+  text-transform: uppercase;
+  color: #1e1e1e;
+  font-weight: 600;
+  font-family: var(--title-fonts);
+  font-size: 15px;
+  padding: 9px 25px;
+  curser: pointer;
+}
+.portfolio .filtering span.active {
+  color: var(--white-color);
+  background-color: var(--gold-text-color);
+}
+.portfolio .filtering span:before {
+  content: "";
+  width: 0;
+  height: 2px;
+  /* background: #111; */
+  position: absolute;
+  left: 0;
+  bottom: -5px;
+  -webkit-transition: all 0.4s;
+  transition: all 0.4s;
+  z-index: -1;
+}
+.portfolio .filtering .active:before {
+  width: 95%;
+}
+.portfolio .items {
+  padding: 0 15px;
+  margin-bottom: 30px;
+}
+.portfolio .item-img {
+  position: relative;
+  overflow: hidden;
+}
+.portfolio .item-img:hover .item-img-overlay {
+  opacity: 1;
+  -webkit-transform: translateY(0);
+  transform: translateY(0);
+}
+.portfolio .item-img:hover h6,
+.portfolio .item-img:hover .icons {
+  -webkit-transform: translateY(0);
+  transform: translateY(0);
+}
+.portfolio .item-img h6 {
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 2px;
+  position: relative;
+  margin-bottom: 15px;
+  -webkit-transform: translateY(-15px);
+  transform: translateY(-15px);
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+}
+.portfolio .item-img .icon i {
+  display: inline-block;
+  color: #eee;
+  font-size: 2rem;
+}
+.portfolio .item-img .icon i:hover {
+  background: transparent;
+  color: #000;
+}
+.portfolio .item-img-overlay {
+  position: absolute;
+  top: 5px;
+  left: 5px;
+  right: 5px;
+  bottom: 5px;
+  background: rgba(0, 0, 0, 0.5);
+  opacity: 0;
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+  z-index: 2;
+  -webkit-transform: translateY(10px);
+  transform: translateY(10px);
+}
