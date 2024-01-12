@@ -280,17 +280,20 @@ li.sub-menu-style-two:hover ul.sub-menu-two {
    <!--Royella Hero Area Css-->
 ==================================---*/
 .hero-area {
-  background: url(../images/home-1/hero-bg.jpg);
+  background: url(../images/home/building.jpeg);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center center;
-  height: 950px;
+  height: 100vh;
   text-align: center;
   position: relative;
 }
 
 .hero-area.style-two {
-  background: url(../images/home-1/hero-bg2.jpg);
+  background: url(../images/home/2.jpeg);
+}
+.hero-area.style-three {
+  background: url(../images/home/3.jpeg);
 }
 
 .hotel-rating ul li {
