@@ -370,6 +370,11 @@ footer {
   background-size: cover;
   position: relative;
 }
+.gallery_.breadcumb-area {
+  background: url("../images/about/2.jpeg") no-repeat center center;
+  background-size: cover;
+  position: relative;
+}
 
 .room-detils-thumb img {
   width: 100%;
