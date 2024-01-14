@@ -125,6 +125,10 @@
       type="text/css"
       media="all"
     />
+    <link rel="stylesheet" 
+    href="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.13.2/themes/base/jquery-ui.min.css" 
+    integrity="sha512-ELV+xyi8IhEApPS/pSj66+Jiw+sOT1Mqkzlh8ExXihe4zfqbWkxPRi8wptXIO9g73FSlhmquFlUOuMSoXz5IRw==" 
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
     <!-- modernizr js -->
     <script src="assets/js/vendor/modernizr-3.5.0.min.js"></script>
   </head>
@@ -168,7 +172,7 @@
           </div>
           <div class="col-lg-2">
             <div class="header-button text-right">
-              <a href="#">Book Online</a>
+              <a href="./result.php?hotel_code=mIeEa8" target="_blank">Book Online</a>
             </div>
           </div>
         </div>
@@ -345,16 +349,19 @@
                     <h4>Online Reservation</h4>
                   </div>
                   <div class="booking-item">
-                    <form action="#" method="POST" id="">
+                    <form action="./result.php?hotel_code=mIeEa8" target="_blank" method="GET" id="book_form">
+                        <input type="hidden" name="hotel_code" value="mIeEa8">
                       <input
                         type="text"
-                        name="checkin"
+                        name="hotel_check_in"
+                        id="checkin"
                         placeholder="Check In"
                         required=""
                       />
                       <input
                         type="text"
-                        name="checkout"
+                        name="hotel_check_out"
+                        id="checkout"
                         placeholder="Check Out"
                         required=""
                       />
@@ -367,7 +374,7 @@
                         "
                       >
                         <div class="header-button text-right">
-                          <a href="#">Check Availability</a>
+                          <a href="#" id="book_btn">Check Availability</a>
                         </div>
                       </div>
 
@@ -491,7 +498,7 @@
               <div class="room-thumb">
                 <img src="assets/images/rooms/1.jpeg" alt="" />
                 <div class="room-details-button">
-                  <a href="#">Book Now<i class="bi bi-arrow-right"></i></a>
+                  <a href="./result.php?hotel_code=mIeEa8" target="_blank">Book Now<i class="bi bi-arrow-right"></i></a>
                 </div>
               </div>
               <div class="room-pricing">
@@ -528,7 +535,7 @@
               <div class="room-thumb">
                 <img src="assets/images/rooms/2.jpeg" alt="" />
                 <div class="room-details-button">
-                  <a href="#">Book Now<i class="bi bi-arrow-right"></i></a>
+                  <a href="./result.php?hotel_code=mIeEa8" target="_blank">Book Now<i class="bi bi-arrow-right"></i></a>
                 </div>
               </div>
               <div class="room-pricing">
@@ -565,7 +572,7 @@
               <div class="room-thumb">
                 <img src="assets/images/rooms/3.jpeg" alt="" />
                 <div class="room-details-button">
-                  <a href="#">Book Now<i class="bi bi-arrow-right"></i></a>
+                  <a href="./result.php?hotel_code=mIeEa8" target="_blank">Book Now<i class="bi bi-arrow-right"></i></a>
                 </div>
               </div>
               <div class="room-pricing">
@@ -799,6 +806,9 @@
 
     <!-- jquery js -->
     <script src="assets/js/vendor/jquery-3.6.2.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.13.2/jquery-ui.min.js" 
+    integrity="sha512-57oZ/vW8ANMjR/KQ6Be9v/+/h6bq9/l3f0Oc7vn6qMqyhvPd1cvKBRWWpzu0QoneImqr2SkmO4MSqU+RpHom3Q==" 
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 
     <script src="assets/js/popper.min.js"></script>
     <!-- bootstrap js -->
@@ -835,5 +845,30 @@
     <script src="assets/js/jquery.barfiller.js"></script>
     <!-- barfiller -->
     <script src="assets/js/scrollCue.min.js"></script>
+    
+    <script>
+        $(function () {
+            $("#checkin").datepicker({
+                dateFormat: 'yy-mm-dd',
+                minDate: 'dateToday',
+                onSelect: function (dateText) {
+                    var nextDay = new Date(dateText);
+                    nextDay.setDate(nextDay.getDate() + 1);
+                    $("#checkout").datepicker().datepicker("setDate", nextDay);
+                    $("#checkout").datepicker().datepicker('option', 'minDate', nextDay);
+                }
+            }).datepicker("setDate", new Date());
+        
+            $("#checkout").datepicker({
+                dateFormat: 'yy-mm-dd',
+                minDate: 'today' + 1,
+            }).datepicker("setDate", new Date());
+            
+            $('#book_btn').on('click', function(e){
+                e.preventDefault();
+                $('#book_form').submit();
+            })
+        });
+    </script>
   </body>
 </html>
