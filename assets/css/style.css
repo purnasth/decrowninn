@@ -641,7 +641,7 @@ input[type="date"]::-webkit-calendar-picker-indicator {
 
 .room-details-button a {
   display: inline-block;
-  background: #1e1e1e;
+  background: var(--primary-gray);
   font-size: 15px;
   text-transform: uppercase;
   color: var(--grey-color);
@@ -1061,6 +1061,7 @@ p.section-desc-2 {
   position: relative;
   z-index: 1;
   margin-bottom: 20px;
+  height: 180px;
 }
 
 /* .single-feature-box:before {
@@ -8328,7 +8329,7 @@ p.room-detils-desc.upper {
 
 .service-time-list {
   background: #f8f6f3;
-  padding: 31px 39px 116px;
+  padding: 31px 39px 46px;
 }
 
 .service-time-list-content h4 {
@@ -9823,3 +9824,4 @@ span.flaticon-multiply i {
   -webkit-animation: Ripple 1.6s ease-in-out infinite;
   -moz-animation: Ripple 1.6s ease-in-out infinite;
 }
+
