@@ -289,12 +289,14 @@ li.sub-menu-style-two:hover ul.sub-menu-two {
   position: relative;
 }
 
-.hero-area.style-two {
+/* .hero-area.style-two {
   background: url(../images/home/2.jpeg);
+  background: url(../images/home/building.jpeg);
 }
 .hero-area.style-three {
   background: url(../images/home/3.jpeg);
-}
+  background: url(../images/home/building.jpeg);
+} */
 
 .hotel-rating ul li {
   display: inline-block;
@@ -6169,8 +6171,12 @@ a.dark-logo {
   background: var(--white-color);
   z-index: 1;
   position: relative;
-  width: 69%;
+  width: auto;
   padding: 22px 0 16px;
+  /* padding: 20px 0;
+  margin: 0 auto;
+  transform: translateY(-50%); */
+  border-radius: 30px;
 }
 
 .home-six .single-booking-box {
@@ -7738,13 +7744,20 @@ a.dark-logo {
 <!--Start Contact Area style two-->
 <!-- ========================================-->*/
 .style-two.contact-area {
-  padding: 124px 0 126px;
+  padding: 6rem 0;
+}
+
+@media (max-width: 568px) {
+  .style-two.contact-area {
+    padding: 0;
+  }
 }
 
 .style-two .row.add-backgroun {
   background-color: #f8f6f3;
-  padding: 98px 67px 101px;
-  margin-top: -203px;
+  /* padding: 98px 67px 101px; */
+  padding: 40px;
+  /* margin-top: -203px; */
 }
 
 .contact-area.style-two.inner .row.add-backgroun {

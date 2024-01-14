@@ -268,7 +268,7 @@ footer {
   z-index: 2;
 }
 
-.about-thumb img{
+.about-thumb img {
   object-fit: cover;
   height: 600px;
 }
@@ -293,4 +293,27 @@ footer {
   width: 30px;
   height: 30px;
   fill: #ffffff; /* WhatsApp icon color */
+}
+
+.filtering {
+  display: grid;
+  gap: 10px;
+  padding: 0 15px;
+  
+}
+
+@media screen and (max-width: 576px) {
+  .filtering {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media screen and (min-width: 577px) {
+  .filtering {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+
+.style-two.contact-area { 
+  background: var(--grey-color);
 }
