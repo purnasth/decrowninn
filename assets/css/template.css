@@ -438,3 +438,13 @@ footer {
 .service-time-list-item ul li b {
   text-transform: capitalize;
 }
+
+.item-img {
+  cursor: zoom-in;
+}
+
+.link i {
+  cursor: zoom-in;
+  padding: 600px;
+  opacity: 0;
+}
