@@ -1697,7 +1697,13 @@ a.facilities-button i:hover {
 <!-- ===================-->*/
 .footer-area {
   /* background: #05081a; */
-  padding: 100px 0 0;
+  padding: 100px 0 0 0;
+}
+
+@media (max-width: 767px) {
+  .footer-area {
+    padding: 20px 0;
+  }
 }
 
 .footer-widget-logo {
@@ -7123,7 +7129,7 @@ a.dark-logo {
 <!--Start Breadcumb Area-->
 <!-- ========================================-->*/
 .breadcumb-area {
-  background: url("../images/home-1/hero-bg.jpg");
+  /* background: url("../images/home-1/hero-bg.jpg"); */
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center center;
@@ -7745,7 +7751,8 @@ a.dark-logo {
 <!--Start Contact Area style two-->
 <!-- ========================================-->*/
 .style-two.contact-area {
-  padding: 6rem 0;
+  padding: 1rem 0;
+  padding-bottom: 4rem;
 }
 
 @media (max-width: 568px) {

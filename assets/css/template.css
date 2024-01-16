@@ -269,7 +269,8 @@ footer {
 
 .about-thumb img {
   object-fit: cover;
-  height: 600px;
+  height: 550px;
+  width: 600px;
 }
 
 .whatsapp-button {
@@ -332,7 +333,6 @@ footer {
   filter: brightness(0) saturate(100%) invert(97%) sepia(50%) saturate(1091%)
     hue-rotate(317deg) brightness(91%) contrast(82%);
 }
-
 
 .facilities.breadcumb-area,
 .about.breadcumb-area {
@@ -397,4 +397,44 @@ footer {
   height: 70vh;
   background-color: rgba(0, 0, 0, 0.65);
   /* z-index: -1; */
+}
+
+/* .header-menu ul {
+  background: red !important;
+  z-index: 9999!important;
+}
+.breadcum-title h4 {
+  position: absolute;
+  background: blue;
+  z-index: -999999999!important;
+  top: 0;
+} */
+
+.breacumb-content {
+  z-index: -1;
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 100%;
+}
+
+@media (max-width: 767px) {
+  .contact-area .col-md-12 {
+    background-color: var(--white-color);
+  }
+}
+
+.service-time-list-item ul li {
+  display: flex;
+  align-items: start;
+  justify-content: start;
+  gap: 10px;
+}
+.service-time-list-item ul li {
+  text-transform: lowercase;
+  font-size: 1rem;
+}
+.service-time-list-item ul li b {
+  text-transform: capitalize;
 }
