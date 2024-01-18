@@ -16,7 +16,7 @@ a.meanmenu-reveal {
   /* background: #c19e68; */
   background: var(--primary-color);
   float: left;
-  min-height: 60px;
+  min-height: 80px;
   padding: 4px 0 0;
   position: relative;
   width: 100%;
@@ -194,9 +194,9 @@ a.meanmenu-reveal {
 .mean-container a.meanmenu-reveal:hover span {
   background: #fff;
 }
-.mean-container .mean-bar::before {
-  content: url("../images/logo.jpg");
-}
+/* .mean-container .mean-bar::before {
+  content: url("../images/logo.png");
+} */
 
 /* .mean-container .mean-bar {
   background: red;

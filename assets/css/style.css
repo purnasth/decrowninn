@@ -1,52 +1,7 @@
-/*===============================================
-Template Name: Royella - Luxury Hotel HTML5 Template 
-Author:  https://themeforest.net/user/dreamit-solution
-Description: Description
-Version: 1.0.0
-Text Domain: Consen
-Tags: consulting, finance, corporate, business, consultant, multipurpose, technology, it-solution, software, agency, company, portfolio, bangking, insurance, digital-agency, digital-marketing.
-================================================*/
 
-/*TABLE OF CONTENTS*/
-/*=====================
-01. Royella  Top Menu Area Css
-02. Royella  Header Menu Area Css
-03. Polytia  Nav Menu Area Css 
-04. Royella  Hero Area Css
-05. Royella  Booking Area Css
-06. Royella  Room Area Css
-07. Royella  Room Details Area Css
-08. Royella  About Area Css
-09. Royella  Service Area Css
-10. Royella  Service Details Area Css
-11. Royella  Find Room Area Css
-12. Royella  Facilities Area Css
-13. Royella  Feature Area Css
-14. Royella  Team Area Css
-15. Royella  Offer Area Css
-16. Royella  Call Do Action Area Css
-17. Royella  Footer Area Css
-18. Royella  Blog Area Css
-19. Royella  Blog Details Area Css
-20. Royella  Contact Area Css
-21. Royella  Search Box  Css
-22. Royella  Loder Css
-22. Royella  Pricing Area Css
-
-=======================*/
-
-/* :root {
-  --primary-color: #0e175c;
-  --gold-color: #b28331;
-  --gold-text-color: #c19d68;
-  --secondary-color: #444;
-  --grey-color: #f8f1ed;
-  --white-color: #ffffff;
-  --title-fonts: "Kalnia", sans-serif;
-  --body-fonts: "Kanit", sans-serif;
-} */
 :root {
-  --primary-color: #0e175c;
+  /* --primary-color: #0e175c; */
+  --primary-color: rgba(0, 0, 0, 0.2);
   --primary-gray: #444;
   --gold-color: #b28331;
   --gold-text-color: #c19d68;
@@ -56,9 +11,7 @@ Tags: consulting, finance, corporate, business, consultant, multipurpose, techno
   --body-fonts: "Lora";
 }
 
-/*---=================================
-   <!--Royella Header Area Css-->
-==================================---*/
+
 .header-area {
   padding: 0 34px;
   position: relative;
@@ -129,12 +82,14 @@ Tags: consulting, finance, corporate, business, consultant, multipurpose, techno
   opacity: 1;
   top: 100%;
   visibility: visible;
+  /* overflow: hidden; */
 }
 
 .header-menu ul li .sub-menu li a {
-  display: block;
+  display: inline-block;
   padding: 0px 19px;
   color: #1e1e1e;
+  /* width: 250px; */
   width: 200px;
   text-transform: capitalize;
   font-size: 16px;
@@ -142,6 +97,9 @@ Tags: consulting, finance, corporate, business, consultant, multipurpose, techno
   transition: 0.5s;
   position: relative;
   z-index: 1;
+  margin: 0;
+  /* transform: translateX(-10px); */
+  /* background: red; */
 }
 
 .header-menu ul li .sub-menu li a:hover {
@@ -269,6 +227,7 @@ li.sub-menu-style-two:hover ul.sub-menu-two {
   -webkit-box-shadow: 0 2px 5px -2px rgba(0, 0, 0, 0.1);
   box-shadow: 0 2px 5px -2px rgba(0, 0, 0, 0.1);
   background: var(--primary-color) !important;
+  backdrop-filter: blur(2px);
   transition: 0.5s !important;
   z-index: 922;
   -webkit-animation: 300ms running fadeInDown;
@@ -1706,9 +1665,9 @@ a.facilities-button i:hover {
   }
 }
 
-.footer-widget-logo {
+/* .footer-widget-logo {
   margin-bottom: 36px;
-}
+} */
 
 .footer-widget-content.upper {
   margin-left: 23px;
